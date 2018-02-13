@@ -39,7 +39,7 @@ static CGFloat minVolume                    = 0.00001f;
     
     if (self) {
         _appIsActive = YES;
-        _sessionCategory = AVAudioSessionCategoryPlayback;
+        _sessionCategory = AVAudioSessionCategoryAmbient;
         _sessionOptions = AVAudioSessionCategoryOptionMixWithOthers;
 
         _volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(MAXFLOAT, MAXFLOAT, 0, 0)];
